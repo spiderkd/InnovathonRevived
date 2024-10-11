@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Neuropol";
+  src: url(../../Public/Fonts/Neuropol.otf);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
