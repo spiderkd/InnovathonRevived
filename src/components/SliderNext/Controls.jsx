@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+"use client";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Progress from "./Progress.jsx";
 

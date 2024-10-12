@@ -1,3 +1,4 @@
+import Noise from "@/components/Contact/Noise";
 import Hero from "@/components/Hero/Hero";
 
 import { SlideTabsExample } from "@/components/Navbar/Navbar";
@@ -9,6 +10,7 @@ export default function Home() {
       <SlideTabsExample />
       <Hero />
       <Slider />
+      <Noise />
     </div>
   );
 }
