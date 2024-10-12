@@ -5,7 +5,7 @@ const Slides = ({ data }) => {
 	return (
 		<div className="flex w-full gap-6">
 			{data.map((data) => {
-				console.log(data);
+				console.log("Sachin");
 				return <SliderCard key={data.image} data={data} />;
 			})}
 		</div>
