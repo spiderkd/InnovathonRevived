@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       <div className="bg-[#0D1117] z-10 Main flex relative justify-center h-screen w-full  ">
         <h1 className="text-9xl Heading tracking-widest absolute mx-auto top-[15%] text-[#D1E8FF] z-10 font-Neuropol ">
-          INNOVATHON
+          INNOVATHONNNN
         </h1>
 
         <Image
