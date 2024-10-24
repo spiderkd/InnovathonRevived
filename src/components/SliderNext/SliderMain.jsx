@@ -16,43 +16,45 @@ const Slider = () => {
 		index: 0,
 	});
 
-	return (
-		<main className="relative  min-h-screen select-none overflow-hidden text-white antialiased">
-			<AnimatePresence>
-				<BackGroundImage
-					transitionData={transitionData}
-					currentSliderData={currentSliderData}
-				/>
-				<div className="absolute z-20 h-full w-full ">
-					<hr />
-					<div className="flex h-full w-full grid-cols-11 flex-col md:grid">
-						<div
-							className="col-span-6 mb-3 flex h-full flex-1 flex-col justify-end  px-5 md:mb-0 md:justify-center m
-            1d:px-10 ">
-							<SlideInfo
-								currentSliderData={currentSliderData}
-								transitionData={transitionData}
-							/>
-						</div>
-						<div className="col-span-5 flex h-full flex-1 flex-col justify-end items-end p-4 md:justify-end ">
-							<Slides data={data} />
-							<Controls
-								data={data}
-								currentSliderData={currentSliderData}
-								transitionData={transitionData}
-								initData={initData}
-								handleData={setData}
-								handleTransitionData={setTransitionData}
-								handleCurrentSliderData={setCurrentSliderData}
-								sliderData={sliderData}
-							/>
-						</div>
-					</div>
-				</div>
-			</AnimatePresence>
-		</main>
-	);
-};
+  return (
+    <main className="relative  min-h-screen flex select-none overflow-hidden py-10 text-white antialiased">
+      
+      <AnimatePresence>
+        <BackGroundImage
+          transitionData={transitionData}
+          currentSliderData={currentSliderData}
+        />
+        <div className="absolute z-20 h-full w-full ">
+          <div className="flex h-full w-full grid-cols-11 flex-col md:grid">
+            <div
+              className="col-span-6 mb-3 flex h-full flex-1 flex-col justify-end  px-5 md:mb-0 md:justify-center m
+            1d:px-10 "
+            >
+              <SlideInfo
+                currentSliderData={currentSliderData}
+                transitionData={transitionData}
+              />
+            </div>
+            <div className="col-span-5 flex h-full flex-1 flex-col justify-start p-4 md:justify-center">
+              <Slides data={data} />
+              <Controls
+                data={data}
+                currentSliderData={currentSliderData}
+                transitionData={transitionData}
+                initData={initData}
+                handleData={setData}
+                handleTransitionData={setTransitionData}
+                handleCurrentSliderData={setCurrentSliderData}
+                sliderData={sliderData}
+              />
+            </div>
+          </div>
+        </div>
+      </AnimatePresence>
+    </main>
+  );
+
+
 
 const sliderData = [
 	{
