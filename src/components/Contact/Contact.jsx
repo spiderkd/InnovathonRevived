@@ -36,18 +36,19 @@ const Contact = () => {
         variants={variants}
       >
         <motion.h1
-          className="text-6xl md:text-7xl hover:text-orange-500 transition-all duration-500"
+          className="text-6xl md:text-7xl text-gray-100 font- hover:text-[#ffffff] transition-all duration-500"
           variants={variants}
         >
           Connect With Us
         </motion.h1>
-        <motion.div className=" ml-1 text-xl font-light" variants={variants}>
-          <h2 className="text-2xl">Mail</h2>
-          <span>innovathonbits@gmail.com</span>
+        <motion.div className=" ml-1 mt-4 text-xl font-light" variants={variants}>
+          <h2 className="text-lg text-gray-400 tracking-wider">Mail</h2>
+          <span className="text-gray-200 tracking-wider">innovathonbits@gmail.com</span>
         </motion.div>
         <motion.div className="ml-1 text-xl font-light" variants={variants}>
-          <h2 className="text-2xl">Address</h2>
-          <span>BIT SINDRI, Dhanbad</span>
+          <h2 className="text-lg text-gray-400 
+tracking-wider">Address</h2>
+          <span className="text-gray-200 tracking-wider">BIT SINDRI, Dhanbad</span>
         </motion.div>
       </motion.div>
 
@@ -59,7 +60,7 @@ const Contact = () => {
           transition={{ delay: 3, duration: 1 }}
         >
           <svg
-            className="stroke-orange-500 w-64 h-64 md:w-96 md:h-96"
+            className="stroke-[#D1E8FF] w-64 h-64 md:w-96 md:h-96"
             viewBox="0 0 32.666 32.666"
           >
             <motion.path
@@ -97,7 +98,7 @@ const Contact = () => {
             required
             placeholder="Name"
             name="from_name"
-            className="p-4 bg-transparent border border-white text-white rounded-md focus:outline-none"
+            className="p-4 bg-transparent border border-[#D1E8FF] text-white rounded-md focus:outline-none"
           />
           <input
             type="email"
@@ -105,18 +106,18 @@ const Contact = () => {
             placeholder="Email"
             name="user_email"
             value="innovathonbits@gmail.com"
-            className="p-4 bg-transparent border border-white text-white rounded-md focus:outline-none"
+            className="p-4 bg-transparent border border-[#D1E8FF] text-white rounded-md focus:outline-none"
           />
           <textarea
             rows={8}
             placeholder="Message"
             name="message"
-            className="p-4 bg-transparent border border-white text-white rounded-md focus:outline-none"
+            className="p-4 bg-transparent border border-[#D1E8FF] text-white rounded-md focus:outline-none"
           />
           <input
             type="submit"
             value="Send"
-            className="p-4 bg-orange-500 text-white rounded-md cursor-pointer hover:bg-white hover:text-black hover:border-orange-500 hover:shadow-lg transition-all duration-500"
+            className="p-4 font-semibold bg-[#D1E8FF] text-gray-700 rounded-md cursor-pointer hover:bg-white hover:text-gray-800 hover:border-orange-500 hover:shadow-lg transition-all duration-500"
           />
         </motion.form>
       </div>

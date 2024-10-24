@@ -7,7 +7,7 @@ const Noise = () => {
   return (
     // NOTE: An overflow of hidden will be required on a wrapping
     // element to see expected results
-    <div className="relative overflow-hidden py-3">
+    <div className="relative overflow-hidden py-3 border-t">
       {/* <ExampleContent /> */}
       <Contact />
       <FuzzyOverlay />
